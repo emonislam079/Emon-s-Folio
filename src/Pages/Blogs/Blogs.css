@@ -1,0 +1,12 @@
+.blogs-container {
+  background-color: #282c34;
+  height: 92vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.blogs-container h1 {
+  color: aquamarine;
+  font-size: 4rem;
+}

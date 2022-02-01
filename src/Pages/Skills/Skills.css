@@ -1,0 +1,54 @@
+.skills-box {
+  border: 1px solid DeepSkyBlue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+.skills-image img {
+  width: 70%;
+  margin: auto;
+  filter: brightness(100%);
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
+  transition: filter 0.4s ease-in-out;
+}
+@media only screen and (max-width: 800px) {
+  .skills-image img {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .skills-image img {
+    width: 70%;
+  }
+}
+.skills-image {
+  padding-bottom: 50px;
+}
+.container-img:hover {
+  cursor: pointer;
+}
+.container-img:hover img {
+  filter: contrast(130%);
+}
+.title {
+  font-family: "Dancing Script", cursive;
+  color: whitesmoke;
+  position: relative;
+}
+
+.title::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 4px;
+  background-color: red;
+  left: 50%;
+  bottom: -10px;
+  transition: all 0.4s ease-in-out;
+}
+.container-img:hover .title::after {
+  width: 100%;
+  left: 0;
+}

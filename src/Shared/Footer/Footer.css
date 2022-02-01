@@ -1,0 +1,10 @@
+.footer-portion {
+  background-color: black;
+  text-align: center;
+}
+.footer-portion p {
+  color: white;
+  padding: 10px;
+  font-size: 1.2em;
+  margin-bottom: 0px;
+}

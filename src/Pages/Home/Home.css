@@ -1,0 +1,50 @@
+.project-container {
+  background: linear-gradient(#363841, #03031d);
+}
+@media only screen and (max-width: 800px) {
+  .project-container {
+    /* use overflow-x for responsiveness */
+    overflow-x: hidden;
+  }
+}
+
+.home-text {
+  text-align: center;
+  align-items: center;
+  height: 92vh;
+  margin: auto;
+}
+
+.home-text h1 {
+  font-size: 4em;
+  font-weight: 900;
+  text-shadow: 2px 2px black;
+}
+
+.home-text h2 {
+  margin-bottom: 30px;
+}
+
+#home-link {
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid aquamarine;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#home-link:hover {
+  color: black;
+  background-color: DeepSkyBlue;
+}
+
+.profile-icon a {
+  font-size: 3rem;
+  margin: 0px 10px;
+}
+
+.profile-icon a:hover {
+  filter: contrast(150%);
+}

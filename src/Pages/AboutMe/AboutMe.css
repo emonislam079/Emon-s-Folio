@@ -1,0 +1,31 @@
+.about-container {
+  background: linear-gradient(#363841, #03031d);
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-family: "Playfair Display", serif;
+}
+@media screen and (max-width: 800px) {
+  .about-container {
+    /* use overflow for responsiveness */
+    overflow-x: hidden;
+  }
+}
+
+.about-me {
+  height: 100%;
+  align-items: center;
+  margin: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.about-me p {
+  margin: 5px;
+  font-size: 1.1em;
+  color: rgb(212, 231, 231);
+}
+.about-me h1,
+button {
+  margin: 10px 0px;
+}

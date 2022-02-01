@@ -1,0 +1,7 @@
+.service-card {
+  border-top: 10px solid gray;
+}
+
+.service-card:hover {
+  border-top: 10px solid rgb(60, 60, 211);
+}
