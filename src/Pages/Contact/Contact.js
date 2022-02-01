@@ -19,26 +19,32 @@ import {
 
 
 
-const service_id = "service_b51x39i";
-const template_id = "template_fw71odk";
-const user_id = "user_YG9y79P4Sw0fNzc3YmBZs";
-
 const Contact = () => {
+  useEffect(() => {
+    AOS.init();
+  });
   const form = useRef();
-    const sendEmail = e => {
-        e.preventDefault();
-        emailjs.sendForm(service_id, template_id, form.current, user_id)
-            .then((result) => {
-                if (result.status === 200) {
-                    alert('Thanks for contacting me, shortly you will receive a response ')
-                    const frm = document.getElementsByName('contact-form')[0];
-                    frm.reset()
 
-                };
-            }, (error) => {
-                console.log(error.text);
-            });
-    };
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "gmail",
+        "template_gz0gytk",
+        form.current,
+        "user_YG9y79P4Sw0fNzc3YmBZs"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   return (
     <div className="contact-container">
       <Container data-aos="fade-up" data-aos-duration="2000">
